@@ -20,6 +20,7 @@ before_install:
  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
  - sudo dpkg -i google-chrome*.deb
 script:
+ - ng lint
  - ng test --watch false # http://mseemann.de/frontend/2016/05/31/setup-angular-2-app-part-1.html
  - ng serve &
  - ng e2e
